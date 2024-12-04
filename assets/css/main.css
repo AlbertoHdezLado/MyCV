@@ -2541,6 +2541,7 @@ body>article {
 	}
 
 	header {
+		font-size: 1.7em;
 		margin: 0 0 1em 0;
 	}
 
@@ -2681,13 +2682,21 @@ body>article {
 		padding-top: 0;
 	}
 
+	.text-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.profile-container h1 {
-		font-size: 2em;
+		justify-content: center;
+		font-size: 1.8em;
 		margin: 0;
 	}
 
 	.profile-container h2 {
-		font-size: 1.5em;
+		justify-content: center;
+		font-size: 1.3em !important;
 		margin: 0;
 	}
 
@@ -2774,8 +2783,22 @@ body>article {
 		margin-top: 0.6em !important;
 	}
 
-	.timeline-item-content h3 {
-		font-size: 1.2em;
+	.timeline-item-content h3,
+	.education-content h3 {
+		font-size: 1.2em !important;
+	}
+
+	.timeline-item-content p,
+	.education-content p {
+		font-size: 1em !important;
+	}
+
+	.timeline-item-content {
+		width: auto;
+	}
+	
+	.education-logo img {
+		width: 3.3em !important;
 	}
 
 	.company,
@@ -3086,11 +3109,11 @@ body>article {
 }
 
 .education-content h3 {
-	font-size: 1.3em !important;
+	font-size: 1.3em;
 }
 
 .education-content p {
-	font-size: 1.1em !important;
+	font-size: 1.1em;
 }
 
 .company,
