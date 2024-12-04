@@ -1,0 +1,555 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/0799cf9df8.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="hidden">
+
+    <!-- Navegación -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="#top" data-key="home"></a></li>
+            <li><a href="#work-experience" data-key="work_experience"></a></li>
+            <li><a href="#education" data-key="education"></a></li>
+            <li><a href="#tech-stack" data-key="tech_stack"></a></li>
+            <li><a href="#courses" data-key="courses"></a></li>
+            <li><a href="#certifications" data-key="certifications"></a></li>
+            <li><a href="#contact" data-key="contact"></a></li>
+        </ul>
+        <div class="language-switcher">
+            <img id="uk-flag" src="images/uk-flag.svg" alt="English" onclick="loadLanguage('en')" />
+            <img id="es-flag" src="images/es-flag.svg" alt="Español" onclick="loadLanguage('es')" />
+        </div>
+    </nav>
+
+    <div class="floating-language-switcher">
+        <img id="floating-uk-flag" src="images/uk-flag.svg" alt="English" onclick="loadLanguage('en')" />
+        <img id="floating-es-flag" src="images/es-flag.svg" alt="Español" onclick="loadLanguage('es')" />
+    </div>
+
+    <div class="diffuse-effect">
+
+        <!-- Sección de perfil -->
+        <section class="wrapper first style1">
+            <div class="container profile-container">
+                <div class="profile">
+                    <span class="image fit"><img src="images/foto-perfil-expandida.jpeg" alt="Profile Picture" /></span>
+                    <div class="text-section">
+                        <h1 data-key="profile_name"></h1>
+                        <h2 data-key="profile_role"></h2>
+                    </div>
+                </div>
+                <div>
+                    <p class="slide-effect" data-key="profile_description_1"></p>
+                    <p class="slide-effect" data-key="profile_description_2"></p>
+                    <p class="slide-effect" data-key="profile_description_3"></p>
+                    <p class="slide-effect" data-key="profile_description_4"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de experiencia laboral -->
+        <section id="work-experience" class="wrapper style3">
+            <div class="container">
+                <header data-key="work_experience"></header>
+                <div class="timeline-container">
+                    <div class="timeline slide-effect">
+                        <div class="timeline-item">
+                            <div class="date">03/2024 - Present</div>
+                            <div class="timeline-item-content">
+                                <div class="same-line">
+                                    <h3 class="company imaxin" data-key="experience_1_company"></h3>
+                                    <a href="https://imaxin.com/" target="_blank" class="timeline-item-link imaxin">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                                <p class="position" data-key="experience_1_role"></p>
+                                <ul class="tasks">
+                                    <li data-key="experience_1_task_1"></li>
+                                    <li data-key="experience_1_task_2"></li>
+                                    <li data-key="experience_1_task_3"></li>
+                                    <li data-key="experience_1_task_4"></li>
+                                    <li data-key="experience_1_task_5"></li>
+                                    <li data-key="experience_1_task_6"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline slide-effect">
+                    <div class="timeline-item">
+                        <div class="date" data-key="experience_2_date">09/2023 - 03/2024</div>
+                        <div class="timeline-item-content">
+                            <div class="same-line">
+                                <h3 class="company nttdata"><strong data-key="experience_2_company">NTT Data Europe &
+                                        Latam</strong></h3>
+                                <a href="https://es.nttdata.com/about-us" target="_blank"
+                                    class="timeline-item-link nttdata">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                            <p class="position"><strong data-key="experience_2_role">Full Stack Developer</strong></p>
+                            <ul class="tasks">
+                                <li data-key="experience_2_task_1"></li>
+                                <li data-key="experience_2_task_2"></li>
+                                <li data-key="experience_2_task_3"></li>
+                                <li data-key="experience_2_task_4"></li>
+                                <li data-key="experience_2_task_5"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="last-timeline slide-effect">
+                    <div class="timeline-item">
+                        <div class="date" data-key="experience_3_date">01/2023 - 06/2023</div>
+                        <div class="timeline-item-content">
+                            <div class="same-line">
+                                <h3 class="company nttdata"><strong data-key="experience_3_company">NTT Data Europe &
+                                        Latam</strong></h3>
+                                <a href="https://es.nttdata.com/about-us" target="_blank"
+                                    class="timeline-item-link nttdata">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                            <p class="position"><strong data-key="experience_3_role">Full Stack Developer</strong></p>
+                            <ul class="tasks">
+                                <li data-key="experience_3_task_1"></li>
+                                <li data-key="experience_3_task_2"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de educación -->
+        <section id="education" class="wrapper style3">
+            <div class="container">
+                <header data-key="education"></header>
+                <div class="timeline-container">
+                    <div class="last-timeline">
+                        <div class="timeline-item slide-effect no-marker">
+                            <div class="date">09/2018 - 09/2023</div>
+                            <div class="timeline-item-content row-flex">
+                                <div class="education-logo"><img src="images/universidad-huelva.svg"
+                                        alt="Universidad de Huelva logo" /></div>
+                                <div class="education-content">
+                                    <div class="same-line">
+                                        <h3 class="university universidad-huelva" data-key="education_1_university">
+                                        </h3>
+                                        <a href="https://www.uhu.es/" target="_blank"
+                                            class="timeline-item-link universidad-huelva">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <p class="position" data-key="education_1_degree"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="last-timeline">
+                    <div class="timeline-item slide-effect no-marker">
+                        <div class="date" data-key="education_2_date">09/2021 - 06/2022</div>
+                        <div class="timeline-item-content row-flex">
+                            <div class="education-logo">
+                                <img src="images/politechnika-wrokalwska.svg" alt="Politechnika Wrocławska logo" />
+                            </div>
+                            <div class="education-content">
+                                <div class="same-line">
+                                    <h3 class="university politechnika-wroklawska" data-key="education_2_university">
+                                    </h3>
+                                    <a href="https://pwr.edu.pl/en" target="_blank"
+                                        class="timeline-item-link politechnika-wroklawska">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                                <p class="position" data-key="education_2_degree"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de tecnologías -->
+        <section id="tech-stack" class="wrapper style2">
+            <div class="container">
+                <header data-key="tech_stack"></header>
+                <div class="tech-stack">
+
+                    <!-- Frameworks -->
+                    <div class="tech-group">
+                        <h2 data-key="frameworks"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/springboot.svg" alt="Spring Boot logo">
+                                <span>
+                                    <p data-key="spring_boot_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/nodejs.svg" alt="Node.js logo" class="amplified">
+                                <span>
+                                    <p data-key="node_js_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lenguajes de programación -->
+                    <div class="tech-group">
+                        <h2 data-key="coding_languages"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/java.svg" alt="Java logo">
+                                <span>
+                                    <p data-key="java_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/python.svg" alt="Python logo">
+                                <span>
+                                    <p data-key="python_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/javascript.svg" alt="JavaScript logo" >
+                                <span>
+                                    <p data-key="javascript_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas de Frontend -->
+                    <div class="tech-group">
+                        <h2 data-key="frontend_tools"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/html5.svg" alt="HTML5 Logo">
+                                <span>
+                                    <p data-key="html5_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/css3.svg" alt="CSS3 Logo">
+                                <span>
+                                    <p data-key="css3_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/thymeleaf.svg" alt="Thymeleaf Logo" >
+                                <span>
+                                    <p data-key="thymeleaf_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Base de datos -->
+                    <div class="tech-group">
+                        <h2 data-key="database_management_systems"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/mysql.svg" alt="MySQL logo">
+                                <span>
+                                    <p data-key="mysql_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/oracle-database.svg" alt="Oracle Database logo">
+                                <span>
+                                    <p data-key="oracle_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/postgresql.svg" alt="PostgreSQL logo">
+                                <span>
+                                    <p data-key="postgresql_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/mongodb.svg" alt="MongoDB logo" class="amplified">
+                                <span>
+                                    <p data-key="mongodb_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas de control de versiones -->
+                    <div class="tech-group">
+                        <h2 data-key="version_control_tools"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/git.svg" alt="Git logo" >
+                                <span>
+                                    <p data-key="git_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/subversion.svg" alt="Subversion logo" >
+                                <span>
+                                    <p data-key="subversion_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CI/CD -->
+                    <div class="tech-group">
+                        <h2 data-key="ci_cd"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/gitlab-ci-cd.svg" alt="GitLab CI logo">
+                                <span>
+                                    <p data-key="gitlab_ci_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/github-actions.svg" alt="GitHub Actions logo">
+                                <span>
+                                    <p data-key="github_actions_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenerización y orquestación -->
+                    <div class="tech-group">
+                        <h2 data-key="containerization_and_orchestration"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/docker.svg" alt="Docker logo">
+                                <span>
+                                    <p data-key="docker_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/kubernetes.svg" alt="Kubernetes logo">
+                                <span>
+                                    <p data-key="kubernetes_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas de prueba -->
+                    <div class="tech-group">
+                        <h2 data-key="testing_tools"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/junit.svg" alt="JUnit Logo">
+                                <span>
+                                    <p data-key="junit_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/selenium.svg" alt="Selenium Logo" class="amplified">
+                                <span>
+                                    <p data-key="selenium_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/jmeter.svg" alt="JMeter Logo">
+                                <span>
+                                    <p data-key="jmeter_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Plataformas en la nube -->
+                    <div class="tech-group">
+                        <h2 data-key="cloud_platforms"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/azure.svg" alt="Azure logo">
+                                <span>
+                                    <p data-key="azure_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Plataformas de alojamiento de repositorios -->
+                    <div class="tech-group">
+                        <h2 data-key="repository_hosting_platforms"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/github.svg" alt="GitHub logo">
+                                <span>
+                                    <p data-key="github_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/gitlab.svg" alt="GitLab logo">
+                                <span>
+                                    <p data-key="gitlab_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas de gestión de proyectos -->
+                    <div class="tech-group">
+                        <h2 data-key="project_management_tools"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/jira.svg" alt="Jira logo">
+                                <span>
+                                    <p data-key="jira_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/easy-redmine.svg" alt="Easy Redmine logo">
+                                <span>
+                                    <p data-key="easyredmine_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas de control de versiones -->
+                    <div class="tech-group last">
+                        <h2 data-key="miscellaneous_tools"></h2>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="images/bash.svg" alt="Bash logo">
+                                <span>
+                                    <p data-key="bash_description"></p>
+                                </span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="images/postman.svg" alt="Postman logo">
+                                <span>
+                                    <p data-key="postman_description"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de cursos -->
+        <section id="courses" class="wrapper style3">
+            <div class="container">
+                <header data-key="courses"></header>
+                <div class="grid">
+                    <a href="https://www.udemy.com/course/spring-boot-microservices-with-spring-cloud-beginner-to-guru"
+                        class="no-underline">
+                        <div class="box-style1">
+                            <h1 data-key="course_1_title"></h1>
+                            <hr />
+                            <h2 data-key="course_1_instructor"></h2>
+                            <h3 data-key="course_1_year"></h3>
+                        </div>
+                    </a>
+                    <a href="https://learn.cantrill.io/p/docker-fundamentals" class="no-underline">
+                        <div class="box-style1">
+                            <h1 data-key="course_2_title"></h1>
+                            <hr />
+                            <h2 data-key="course_2_instructor"></h2>
+                            <h3 data-key="course_2_year"></h3>
+                        </div>
+                    </a>
+                    <a href="https://learn.microsoft.com/training/courses/az-900t00" class="no-underline">
+                        <div class="box-style1">
+                            <h1 data-key="course_3_title"></h1>
+                            <hr />
+                            <h2 data-key="course_3_instructor"></h2>
+                            <h3 data-key="course_3_year"></h3>
+                        </div>
+                    </a>
+                    <a href="https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide"
+                        class="no-underline">
+                        <div class="box-style1">
+                            <h1 data-key="course_4_title"></h1>
+                            <hr />
+                            <h2 data-key="course_4_instructor"></h2>
+                            <h3 data-key="course_4_year"></h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de certificaciones -->
+        <section id="certifications" class="wrapper style1">
+            <div class="container">
+                <header data-key="certifications"></header>
+                <div class="flex">
+                    <a href="https://www.scrum.org/assessments/professional-scrum-master-i-certification"
+                        class="no-underline">
+                        <div class="box-style2">
+                            <div class="image">
+                                <img src="images/psm1.png" alt="Profile Picture" />
+                            </div>
+                            <h1 data-key="certification_1_title"></h1>
+                            <h2 data-key="certification_1_instructor"></h2>
+                            <h3 data-key="certification_1_year"></h3>
+                        </div>
+                    </a>
+                    <a href="https://www.netacad.com/es/courses/ccna-switching-routing-wireless-essentials"
+                        class="no-underline">
+                        <div class="box-style2">
+                            <div class="image">
+                                <img src="images/ccna2.png" alt="Profile Picture" />
+                            </div>
+                            <h1 data-key="certification_2_title"></h1>
+                            <h2 data-key="certification_2_instructor"></h2>
+                            <h3 data-key="certification_2_year"></h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <article id="contact" class="wrapper style4">
+            <div class="container medium">
+                <h2 data-key="contact_header"></h2>
+                <p><i class="fas fa-phone"></i> <a href="tel:+34 671 49 24 84">+34 671 49 24 84</a></br>
+                    <i class="fas fa-envelope"></i> <a href="mailto:albertohljob@gmail.com">albertohljob@gmail.com</a></br>
+                </p>
+                <ul class="social">
+                    <li><a href="https://www.linkedin.com/in/albertohl" class="icon brands fa-linkedin"><span
+                                class="label" data-key="linkedin"></span></a></li>
+                    <li><a href="https://github.com/AlbertoHdezLado" class="icon brands fa-github"><span class="label"
+                                data-key="github"></span></a></li>
+                </ul>
+                <hr />
+                <footer>
+                    <ul id="copyright">
+                        <li data-key="footer_designed_by"></li>
+                        <li data-key="footer_rights"></li>
+                    </ul>
+                </footer>
+            </div>
+        </article>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
