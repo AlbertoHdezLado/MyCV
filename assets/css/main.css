@@ -2801,27 +2801,6 @@ body>article {
 
 	}
 
-	.tech-item {
-		display: flex;
-		flex-direction: column;
-		/* Coloca el contenido del .tech-item en columna */
-		align-items: center;
-		justify-content: center;
-		width: 6.25em;
-		/* 100px / 16 = 6.25em */
-		height: 6.25em;
-		background-color: #cecece00 !important;
-		border: 0.125em !important;
-		/* 2px / 16 = 0.125em */
-		border-radius: 0.625em;
-		/* 10px / 16 = 0.625em */
-		box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
-		/* 4px, 6px */
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
-		cursor: pointer;
-		overflow: visible;
-	}
-
 	.tech-items {
 		flex-direction: column !important;
 		align-items: center !important;
