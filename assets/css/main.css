@@ -2707,7 +2707,7 @@ body>article {
 	}
 
 	.profile-container p {
-		margin: 0 1em 0 1em;
+		margin: 0 1.5em 0 1.5em !important;
 		font-size: 1em;
 	}
 
