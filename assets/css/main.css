@@ -1381,10 +1381,6 @@ footer>p {
 		margin-right: auto;
 	}
 
-	.grid {
-		display: block !important;
-	}
-
 }
 
 @media screen and (max-width: 736px) {
@@ -2848,6 +2844,21 @@ body>article {
 	.tech-item span {
 		min-width: 60vw !important;
 		position: fixed !important;
+	}
+
+
+	.grid {
+		grid-template-columns: 1fr;
+		margin: 0;
+	}
+
+	.grid .box-style1 {
+		width: 90% !important;
+		margin: auto;
+	}
+
+	.flex {
+		flex-direction: column !important;
 	}
 
 }
