@@ -2707,8 +2707,8 @@ body>article {
 	}
 
 	.profile-container p {
-		margin: 0 1.5em 0 1.5em !important;
-		font-size: 1em;
+		margin: 0 1em 0 1em !important;
+		font-size: 1.1em !important;
 	}
 
 	#contact footer {
@@ -2785,12 +2785,12 @@ body>article {
 
 	.timeline-item-content h3,
 	.education-content h3 {
-		font-size: 1.2em !important;
+		font-size: 1.3em !important;
 	}
 
 	.timeline-item-content p,
 	.education-content p {
-		font-size: 1em !important;
+		font-size: 1.2em !important;
 	}
 
 	.timeline-item-content {
@@ -2816,7 +2816,7 @@ body>article {
 	}
 
 	.tasks li {
-		font-size: 0.9em;
+		font-size: 1.1em;
 	}
 
 	.tech-stack {
@@ -2844,8 +2844,9 @@ body>article {
 	}
 
 	.tech-item span {
-		min-width: 60vw !important;
+		min-width: 70vw !important;
 		position: fixed !important;
+		font-size: 1.1em !important;
 	}
 
 
