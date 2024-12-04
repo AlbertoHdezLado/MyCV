@@ -81,7 +81,7 @@
     "project_management_tools": "Project Management Tools",
     "jira_description": "I used Jira to log the hours worked on each task, manage the task status throughout the project lifecycle, and generate periodic progress reports, ensuring deadlines were met as planned.",
     "easyredmine_description": "With Easy Redmine, I managed the time spent on each task by assigning hours and tracking progress. I also set up progress reports to ensure projects remained on schedule.",
-    "miscellaneous_tools": "Miscellaneous Tools",
+    "miscellaneous_tools": "Other tools",
     "bash_description": "I automated tasks with Bash/Shell, managing configurations and deployments on Linux systems like Ubuntu and CentOS.",
     "postman_description": "I used Postman to test, debug, and automate API testing, ensuring that endpoints met functional and performance requirements before deployment.",
     "courses_header": "Courses",

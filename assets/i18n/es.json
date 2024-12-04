@@ -81,7 +81,7 @@
     "project_management_tools": "Herramientas de Gestión de Proyectos",
     "jira_description": "Utilicé Jira para registrar las horas trabajadas en cada tarea, gestionar el estado de las tareas a lo largo del ciclo de vida del proyecto y generar reportes periódicos sobre el avance de las mismas, asegurando que los plazos se cumplieran según lo planeado.",
     "easyredmine_description": "Con Easy Redmine, administré el tiempo dedicado a cada tarea mediante la asignación de horas y el seguimiento del progreso de las mismas. También configuré reportes de avance para asegurar que los proyectos se mantuvieran dentro del calendario previsto.",
-    "miscellaneous_tools": "Miscellaneous tools",
+    "miscellaneous_tools": "Otras herramientas",
     "bash_description": "Automaticé tareas con Bash/Shell, gestionando configuraciones y despliegues en sistemas Linux como Ubuntu y CentOS.",
     "postman_description": "Usé Postman para probar, depurar y automatizar las pruebas de las API, asegurando que los endpoints cumplieran con los requisitos funcionales y de rendimiento antes de su implementación.",
     "courses_header": "Cursos",
