@@ -376,13 +376,8 @@ footer>p {
 }
 
 @media screen and (max-width: 980px) {
-
-	.container {
-		width: 100%;
-	}
-
-	.container.medium {
-		width: 75%;
+	.grid {
+		grid-template-columns: none !important;
 	}
 
 }
@@ -2692,7 +2687,7 @@ body>article {
 
 	.profile-container h1 {
 		justify-content: center;
-		font-size: 1.8em;
+		font-size: 17pt;
 		margin: 0;
 	}
 
@@ -2710,7 +2705,7 @@ body>article {
 
 	.profile-container p {
 		margin: 0 1em 0 1em !important;
-		font-size: 1.1em !important;
+		font-size: 10pt !important;
 	}
 
 	#contact footer {
@@ -2829,7 +2824,7 @@ body>article {
 	}
 
 	.tasks li {
-		font-size: 1.1em;
+		font-size: 10pt;
 	}
 
 	.tech-stack {
@@ -2859,7 +2854,7 @@ body>article {
 	.tech-item span {
 		min-width: 70vw !important;
 		position: fixed !important;
-		font-size: 1.1em !important;
+		font-size: 8pt !important;
 	}
 
 
@@ -3264,7 +3259,7 @@ body>article {
 
 .tech-item span {
 	display: none;
-	font-size: 0.7em;
+	font-size: 10pt;
 	line-height: 2em;
 	color: #000000;
 	text-align: center;
