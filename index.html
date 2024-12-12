@@ -23,14 +23,20 @@
             <li><a href="#contact" data-key="contact"></a></li>
         </ul>
         <div class="language-switcher">
-            <img id="uk-flag" src="images/uk-flag.svg" alt="English" onclick="loadLanguage('en')" />
-            <img id="es-flag" src="images/es-flag.svg" alt="Español" onclick="loadLanguage('es')" />
+            <img id="lang-icon" src="images/language.svg" alt="Idioma" onclick="toggleDropdown()" />
+            <div id="language-dropdown" class="language-dropdown">
+                <img class="uk-flag" src="images/uk-flag.svg" alt="English" onclick="loadLanguage('en')" />
+                <img class="es-flag" src="images/es-flag.svg" alt="Español" onclick="loadLanguage('es')" />
+            </div>
         </div>
     </nav>
 
     <div class="floating-language-switcher">
-        <img id="floating-uk-flag" src="images/uk-flag.svg" alt="English" onclick="loadLanguage('en')" />
-        <img id="floating-es-flag" src="images/es-flag.svg" alt="Español" onclick="loadLanguage('es')" />
+        <img id="lang-icon" src="images/language.svg" alt="Idioma" onclick="toggleDropdown()" />
+        <div id="floating-language-dropdown" class="language-dropdown">
+            <img class="uk-flag" src="images/uk-flag.svg" alt="English" onclick="loadLanguage('en')" />
+            <img class="es-flag" src="images/es-flag.svg" alt="Español" onclick="loadLanguage('es')" />
+        </div>
     </div>
 
     <div class="diffuse-effect">
@@ -77,6 +83,7 @@
                                     <li data-key="experience_1_task_4"></li>
                                     <li data-key="experience_1_task_5"></li>
                                     <li data-key="experience_1_task_6"></li>
+                                    <li data-key="experience_1_task_7"></li>
                                 </ul>
                             </div>
                         </div>
@@ -223,7 +230,7 @@
                                 </span>
                             </div>
                             <div class="tech-item">
-                                <img src="images/javascript.svg" alt="JavaScript logo" >
+                                <img src="images/javascript.svg" alt="JavaScript logo">
                                 <span>
                                     <p data-key="javascript_description"></p>
                                 </span>
@@ -248,7 +255,7 @@
                                 </span>
                             </div>
                             <div class="tech-item">
-                                <img src="images/thymeleaf.svg" alt="Thymeleaf Logo" >
+                                <img src="images/thymeleaf.svg" alt="Thymeleaf Logo">
                                 <span>
                                     <p data-key="thymeleaf_description"></p>
                                 </span>
@@ -292,13 +299,13 @@
                         <h2 data-key="version_control_tools"></h2>
                         <div class="tech-items">
                             <div class="tech-item">
-                                <img src="images/git.svg" alt="Git logo" >
+                                <img src="images/git.svg" alt="Git logo">
                                 <span>
                                     <p data-key="git_description"></p>
                                 </span>
                             </div>
                             <div class="tech-item">
-                                <img src="images/subversion.svg" alt="Subversion logo" >
+                                <img src="images/subversion.svg" alt="Subversion logo">
                                 <span>
                                     <p data-key="subversion_description"></p>
                                 </span>
@@ -438,7 +445,7 @@
                             </div>
                         </div>
                     </div>
-                
+
 
                 </div>
             </div>
@@ -523,7 +530,8 @@
             <div class="container medium">
                 <h2 data-key="contact_header"></h2>
                 <p><i class="fas fa-phone"></i> <a href="tel:+34 671 49 24 84">+34 671 49 24 84</a></br>
-                    <i class="fas fa-envelope"></i> <a href="mailto:albertohljob@gmail.com">albertohljob@gmail.com</a></br>
+                    <i class="fas fa-envelope"></i> <a
+                        href="mailto:albertohljob@gmail.com">albertohljob@gmail.com</a></br>
                 </p>
                 <ul class="social">
                     <li><a href="https://www.linkedin.com/in/albertohl" class="icon brands fa-linkedin"><span

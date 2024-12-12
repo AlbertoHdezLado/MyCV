@@ -63,20 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	checkVisibility();
 });
 
-
-async function loadLanguage(lang) {
-	
-}
-
-// Función para mostrar la bandera correcta según el idioma
-function updateFlags() {
-	const lang = document.documentElement.lang; // Obtiene el idioma actual
-	document.getElementById('uk-flag').classList.toggle('active', lang !== 'en');
-	document.getElementById('es-flag').classList.toggle('active', lang !== 'es');
-	document.getElementById('floating-uk-flag').classList.toggle('active', lang !== 'en');
-	document.getElementById('floating-es-flag').classList.toggle('active', lang !== 'es');
-}
-
 async function getParamLang() {
 	const urlParams = new URLSearchParams(window.location.search);
 	lang = urlParams.get('lang') || 'en';
@@ -100,9 +86,44 @@ async function getParamLang() {
 }
 
 function loadLanguage(lang) {
-    const url = new URL(window.location.href);
-    url.searchParams.set('lang', lang);
-    window.location.href = url.toString();
+	const url = new URL(window.location.href);
+	url.searchParams.set('lang', lang);
+	window.location.href = url.toString();
+	updateLanguage();
+}
+
+function toggleDropdown() {
+	const dropdowns = document.querySelectorAll(".language-dropdown");
+
+	dropdowns.forEach(dropdown => {
+		// Alternar la visibilidad del desplegable con la clase 'visible'
+		if (dropdown.classList.contains("visible")) {
+			dropdown.classList.remove("visible");
+			setTimeout(() => {
+				dropdown.style.display = "none"; // Asegurarnos de que se oculte después de la animación
+			}, 300); // Coincide con la duración de la animación
+		} else {
+			dropdown.style.display = "block"; // Mostrar antes de activar la animación
+			setTimeout(() => dropdown.classList.add("visible"), 10); // Ligeramente retrasar para que se active la animación
+		}
+	});
+}
+
+
+function updateLanguage() {
+	const lang = document.documentElement.lang;
+	const ukFlags = document.querySelectorAll(".uk-flag");
+	const esFlags = document.querySelectorAll(".es-flag");
+
+	// Mostrar la bandera correspondiente según el idioma
+	if (lang === "es") {
+		ukFlags.forEach(flag => flag.style.display = "block"); // Mostrar todas las banderas del Reino Unido
+		esFlags.forEach(flag => flag.style.display = "none");  // Ocultar todas las banderas de España
+	} else if (lang === "en") {
+		ukFlags.forEach(flag => flag.style.display = "none");  // Ocultar todas las banderas del Reino Unido
+		esFlags.forEach(flag => flag.style.display = "block"); // Mostrar todas las banderas de España
+	}
 }
 
 getParamLang()
+updateLanguage()
